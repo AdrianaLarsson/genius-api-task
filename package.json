@@ -1,0 +1,20 @@
+{
+  "name": "api-task",
+  "version": "1.0.0",
+  "description": "task-api to my application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adriana Larsson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "genius": "0.0.2",
+    "mongoose": "^5.6.12",
+    "nodemon": "^1.19.2",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6",
+    "unirest": "^0.6.0"
+  }
+}

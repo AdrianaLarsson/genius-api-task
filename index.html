@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My API</title>
+   
+</head>
+<!--HEADER -->
+      <body>
+      <nav<div class="z-depth-1 green light green center "><h1>Songs and Artists</h1> </div>
+<nav class="z-depth-3 light-green center"><h1>Genius API</h1></nav>
+<body>
+   
+ <!-- show the srtist and the song from API GENIUS API -->
+ <div class="container" style="margin-top: 40px;">
+        <ul class="collapsible z-depth-0 guides" style="border: none;">
+          <li>
+                <div class="card-panel hoverable green lighten-4"><div class="collapsible-header grey lighten-3 " > <i class="material-icons">add</i> <i class="edit material-icons modal-trigger" href="#modal-update">edit</i><i class="delete material-icons red-text" id="delete" >delete</i><button onclick="song(16775)">Artists</button></div></div>
+                <div class="collapsible-body white"> <th><div class="artist-list center" id="artists"> </th></div></div>
+          </li>
+          <li>
+                <div class="card-panel hoverable blue lighten-4"><div class="collapsible-header grey lighten-3"> <i class="material-icons">add</i><i class="edit material-icons modal-trigger" href="#modal-update">edit</i><i class="delete material-icons red-text" id="delete" >delete</i><button onclick="song(16775)">Titles</button></div></div>
+                <div class="collapsible-body white"><th><div class="title-list center" id="title" > </th></div></span></div>
+          </li>
+          
+        </ul>
+      </div>
+            
+
+    <script src="index.js"></script>
+    <script src="storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+
+<script>
+  //  web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDz_7GzE3hpClZN0c4TopZYwJu1bhqJYQk",
+    authDomain: "genius-582f5.firebaseapp.com",
+    databaseURL: "https://genius-582f5.firebaseio.com",
+    projectId: "genius-582f5",
+    storageBucket: "",
+    messagingSenderId: "290892585746",
+    appId: "1:290892585746:web:7b3aee8b30d98fdb9871cb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const fs = firebase.firestore();
+
+  //const storageRef = firebase.storage().ref();
+</script>
+    
+<!--TEST CODE-->
+
+
+<!--<form action="/action_page.php">
+    Search Google: <input type="search" name="q"><br>
+    <input type="submit">
+  </form>
+ <div class="z-depth-3 blue ">Genius API</div>
+<nav class="z-depth-3 light-green center" ><h1>Songs and Artists</h1>-->
+  <!-- <button onclick="getArtist(16775)">GET LIST</button>
+    <div class="song-list" id="songs"> </div>
+    <h3><div class="card-panel hoverable center" >Artists</div></h3
+            <th><div class="artist-list center" id="artists"> </th></div>
+        <h3><div class="card-panel hoverable center">Titles<div></h3>
+                    <th><div class="title-list center" id="title"> </th></div> --> 
+                    
+                        <!-- POST TITLE 
+   <button onclick="song(16775)">GET LIST</button>
+      <div class="container" style="margin-top: 40px;">
+        <ul class="collapsible z-depth-0 guides " style="border: none;">
+          <li>
+            <div class="collapsible-header c  lighten-4"><h3><div class="card-panel hoverable " ><button onclick="song(16775)">Artists</button></div></h3></div>
+            <div class="collapsible-body white"> <th><div class="artist-list center" id="artists"> </th></div></div>
+          </li>
+          <li>
+            <div class="collapsible-header center lighten-4"><h3><div class="card-panel hoverable"><button onclick="song(16775)">Titles</button><div></h3></div>
+            <div class="collapsible-body white"><th><div class="title-list center" id="title"> </th></div></span></div>
+          </li>
+       
+        </ul>
+      </div>
+-->
+
+
+   
+
+    
+</body>
+</html>
