@@ -21,7 +21,7 @@ function song(id){
                 console.log(element);
                 let img = element.primary_artist.image_url;
                 console.log(img)
-              
+               
                 console.log( " Artist " + element.primary_artist.name + "" + " Title " + element.full_title)
                 artist.innerHTML +=  `</br>`+  element.primary_artist.name 
                 title.innerHTML += `</br>`+  element.full_title 
@@ -29,7 +29,9 @@ function song(id){
 
                 // var image = images.innerHTML += `<img src="${img}" />`;
                  
+               console.log(saveGenius(element.primary_artist.name, element.full_title, element.id), "saved to firebase!")
             });
+            
 
         })
     })
