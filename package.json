@@ -9,7 +9,7 @@
   "author": "Adriana Larsson",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "genius": "0.0.2",
     "mongoose": "^5.6.12",
     "nodemon": "^1.19.2",
